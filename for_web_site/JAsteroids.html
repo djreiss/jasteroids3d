@@ -1,0 +1,171 @@
+<HTML>
+<TITLE>
+3-D JAsteroids!!!
+</TITLE>
+
+<body bgcolor="#000000" text="#ffff00" link="#00ffff" vlink="#ff00ff">
+
+<table><tr><td>
+<center>
+<h1>
+Get out the "Preparation-J"<br>...it's...<br><br>
+<font color="#FF0000">3-D JAsteroids</font> <br>time!
+</h1>
+</center>
+</td><td>
+<image src=images/JAsteroids.gif width=350 height=200>
+</td><td>
+
+<!--
+Rated as <a href=http://www.developer.com/directories/pages/cool.html>Cool!
+<img src=http://www.developer.com/images/cool.gif align=bottom border=0></a> by 
+<a href=http://www.developer.com/directories/pages/dir.java.html>
+<img src=http://www.developer.com/images/ads/lotuspromo.gif alt=Gamelan align=center border=0></a>
+-->
+</td></tr></table>
+
+<center>
+
+<a href=#game>Play the game</a> | <a href=#notes>Notes</a> | <a
+href=#instructions>Instructions</a> | <a href=#whatsnew>Whats New</a>
+| <a href=#comingsoon>Coming soon?</a> | <a href=#credits>Credits</a>
+
+</center>
+<hr><br>
+<BODY>
+
+<center>
+
+Due to multiple requests, I've decided to allow you to decide what
+version of the game best fits your computer. So just fill out the form
+below and press "Start Game" to load the correct applet!<br><br>
+Also, please enter your name to be recorded if you score a high score.<br>
+
+(Nope, this doesn't work any more since GeoCities doesn't allow
+CGI. Hopefully I'll figure out a way to do it...)  
+
+<br><br><hr><br><a name=game>
+<form method=GET action=JAsteroids_script.html>
+Enter your name here: <input name="name" value="" size=20 maxlength=20> <== REQUIRED!
+<table cellpadding=40><tr><td>
+Enter the speed of your computer here:<br><br>
+<input type="radio" name="speed" value="fast">Blindingly fast (233 MHz 
+or faster)
+<br>
+<input type="radio" name="speed" value="normal" checked>Normal (120 
+to 233 MHz)
+<br>
+<input type="radio" name="speed" value="slow">Pokey (slower than about 120 
+MHz)
+</td><td>
+What size window would you like to play the game in?<br><br>
+<input type="radio" name="size" value="large">Huge (800x600 pixels)
+<br>
+<input type="radio" name="size" value="normal" checked>Normal (650x500 pixels)
+<br>
+<input type="radio" name="size" value="small">Pitiful (500x400 pixels)
+</td></tr></table>
+<strong><INPUT TYPE="reset" VALUE="Reset to defaults"></strong>
+<strong><input type=submit value="Start Game"></strong>
+</form>
+This game should take about 20 to 30 seconds to download over a 33.6 kbaud modem if you have
+Netscape (or IE) 4.0 or later. It will take twice that long for Netscape 3.0.
+<br><br>
+
+</center>
+
+<br><br><hr><br><a name=notes>
+<font size=+2>NOTES:</font><br><br>
+
+Note there is a bug in some browsers in which they aren't stopping the
+animation when you move on to another page. This can freeze your
+browser on some systems. To make sure this doesn't happen, press the
+"Pause" button before you move to another page.
+
+<br><br>
+
+This is a 100% pure Java applet that is known to run well on Apple
+Macs (both '040 and PPC), Sun Ultras running Solaris and Sparcs
+running SunOS, and PCs running Linux, Win95, and Windows NT.  Not too
+shabby, eh!?
+
+<br><br><hr><br>
+<a name=instructions><center><u>Instructions</u>:</center><br>
+
+You are the little white ship at the center of the cube. Use the
+controls listed above to navigate in 3D-space and shoot the
+asteroids. Use the radar (side and top) on the bottom right and the
+ship's-eye view (bottom left) to help determine where you are.  Note
+that when asteroids (and your ship) leave one side of the cube, they
+return on the opposite side. Watch your energy...shields, thrusting
+and firing uses up energy. Hitting an asteroid adds to your score
+(smaller asteroids are worth more) and splits larger asteroids into
+multiple smaller ones. When you destroy them all you move onto the
+next round, which is harder. You get a total of 3 lives, but gain
+additional lives when you score a multiple of 10000.  It's that
+simple!
+
+<br><br><hr><br><a name=whatsnew>
+<center><u>New since version 1.0:</center></u><br>
+<ul>
+
+<li>High scores are now disabled because GeoCities won't allow
+CGI. Anyone know of a way around this?
+
+<li>Just fixed a bug that I didn't know about that was around since
+July: high scores are once again being saved.
+
+<li>NEW...A ship's-eye view to allow easier location of asteroids
+
+<li>NEW...high scores! You have to end your game (or press the "End
+Game" button) to see them, though.  
+
+<li>Added those cute little flying saucers that fly through every once
+in a while. The small pink ones move fast, shoot often, and are worth
+more (2000 points). The larger, slower green ones are worth 1000
+points. Beware, they shoot in your general direction and don't miss
+very often!  Keep moving to make sure you don't get hit!  
+
+<li>Nifty, more realistic animated explosions. (Note the bug that
+sometimes they don't work the first time.  This is a limitation of
+Java.)  
+
+<li>Added some really poor sounds. More to come. Send me some better
+ones if you've got 'em!  
+
+<li>This page for customizing the game to your computer, and new code
+that is more friendly for both very fast and very slow
+computers. Looks really nice on a 300MHz Pentium II!  
+
+<li>The rotating 3-D text at start-up that I am very proud of. It is
+actually being rendered real-time!
+
+</ul>
+<br><a name=comingsoon>
+<center><u>Coming soon</u> (hopefully):</center><br>
+<ul>
+
+<li>Better (but slower) graphics (with an option to turn them off for
+slow computers)...  For a preview, look at my <a
+href="world3dApplet.html">world3d applet</a>.
+
+<br>
+
+**Note you need a Java 1.1 compatible browser such as Netscape
+Communicator 4.0 or later to run this applet.**
+
+<li>Network play against (or in cooperation with) other players
+
+<li>Getting around to fixing the bugs whereby sometimes more distant
+objects get drawn after nearer objects
+
+<li>Also fixing the drawing of the bounding cube in the ship's-eye
+view
+
+</ul>
+
+<a name=credits>
+<br><hr><br>Written by astrodud.<br>
+
+</BODY>
+</HTML>
