@@ -18,9 +18,9 @@ _______________________________________________________________________
 
 TO COMPILE:
 
-Install a Java DK (anything older than Java 1.1 will work)
-Edit the Makefile if necessary
-Type "make"
+1. Install a Java DK (anything older than Java 1.1 will work)
+2. Edit the Makefile if necessary
+3. Type "make"
 
 _______________________________________________________________________
 

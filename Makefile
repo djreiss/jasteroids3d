@@ -10,8 +10,8 @@ all: cfiles jar
 VERSION = 1.1.3
 PACKAGE = JAsteroids3D
 
-#JC = javac
-JC = jikes -g:none
+JC = javac
+#JC = jikes -g:none
 JCFLAGS = -O -nowarn
 JDOC = javadoc
 JAVA = java
@@ -61,6 +61,7 @@ cfiles: ${CFILES}
 	${JC} ${JCFLAGS} djr/d3d/JAsteroids/JAsteroids.java
 
 jar: ${CFILES}
+	${JC} ${JCFLAGS} djr/util/MakeJarRunnable.java
 	jar -cf ${JARFILE} ${INTOJAR} 
 	${JAVA} djr.util.MakeJarRunnable ${JARFILE} djr.d3d.JAsteroids.JAsteroids temp_r.jar
 	mv -f temp_r.jar ${JARFILE}
