@@ -711,7 +711,7 @@ public class JAsteroids extends Applet implements Runnable {
    }
 }
 
-public class asteroid extends movableObject3d {
+class asteroid extends movableObject3d {
    static final int LARGE = 40;
    static final int MEDIUM = 30;
    static final int SMALL = 20;
@@ -921,7 +921,7 @@ public class asteroid extends movableObject3d {
    }
 }
 
-public class ship extends asteroid {
+class ship extends asteroid {
    static asteroid hitBy = null;
    static ship shp = null;
    vertex dir = new vertex( 0, 0, -1 );
@@ -1103,7 +1103,7 @@ public class ship extends asteroid {
    }
 }
 
-public class torpedo extends asteroid {
+class torpedo extends asteroid {
    static final int MAXSHARDS = 30;
    static int nshards = 0; // Dont let more than say 30 explosion shards to exist at one time
    static animStrip strip = null;
@@ -1234,7 +1234,7 @@ public class torpedo extends asteroid {
    }
 }
 
-public class ufo extends asteroid {
+class ufo extends asteroid {
    static ufo currentUFO = null, smallUFO = null, largeUFO = null;
    static long ufoTime = Long.MAX_VALUE;
    static java.applet.AudioClip clip = null;
